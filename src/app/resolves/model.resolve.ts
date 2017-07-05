@@ -8,11 +8,8 @@ import 'rxjs/add/operator/combineLatest';
 
 @Injectable()
 export class ModelResolve implements Resolve<any> {
-    private obs: Observable<any>;
 
-    constructor(private data: DataService, private store: Store<any>) {
-        this.obs = new Observable();
-    }
+    constructor(private data: DataService, private store: Store<any>) {}
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any> {
         console.log(route);
