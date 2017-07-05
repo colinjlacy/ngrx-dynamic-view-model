@@ -5,7 +5,7 @@ import { Store } from '@ngrx/store';
 import { BaseView } from './base.view';
 
 @Component({
-    selector: 'first-page',
+    selector: 'second-page',
     template: `
     <h1>Second Page</h1>
     <h2>{{model.band.name}}</h2>
