@@ -3,7 +3,7 @@ import { Action } from '@ngrx/store';
 export const SET_MODEL = 'SET_MODEL';
 export const REMOVE_DEPENDENCIES = 'REMOVE_DEPENDENCIES';
 
-export const model = (state: any = {}, action: {type: string, payload?: any} = {type: null}) => {
+export function model(state: any = {}, action: {type: string, payload?: any} = {type: null}) {
     switch (action.type) {
 
         case SET_MODEL:
@@ -21,4 +21,4 @@ export const model = (state: any = {}, action: {type: string, payload?: any} = {
         default:
             return state;
     }
-};
+}
